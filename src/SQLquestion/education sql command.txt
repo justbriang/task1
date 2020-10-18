@@ -1,0 +1,1 @@
+SELECT institution.name AS Institution_Name ,course.name AS Course_Name,Count(*) as Number_of_Students FROM `student` INNER JOIN course on course.courseid=student.course INNER JOIN institution on course.institution=institution.institutionid GROUP BY course.name
